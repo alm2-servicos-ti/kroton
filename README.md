@@ -45,24 +45,6 @@ $ curl ec2-54-209-78-186.compute-1.amazonaws.com [Teste de acesso à url na port
 $ wget http://s3.amazonaws.com/ec2metadata/ec2-metadata => para coletar a id da instância (opcional se estiver usando AWS como provedor)
 
 * Criar e executar o seguinte script para coletar os logs e enviá-los ao S3
-
-
-#!/bin/bash
-logdate=`date +'%Y-%m-%d'`
-source=/var/log/nginx
-shopt -s dotglob
-sudo tar zcvf $source/ngxlog_$logdate.tar.gz $source/*.log
-for file in "${source}"/*.gz
-do
-   if [ -f "${file}" ]; then
-      instance_details=` /home/ec2-user/scripts/ec2-metadata -i`
-      find_str="instance-id: "
-      replace_str=""
-      instance_id=${instance_details//$find_str/$replace_str}
-      aws s3 cp $file s3://alm2nginxlogs/WSNginxLogs/$instance_id/
-      rm -f $file
-   fi
-done
-
+[ kroton/scripts/logs_backup.sh ]
 
 * Como opção, podemos adicionar o mesmo ao cron para agendamento de execução
