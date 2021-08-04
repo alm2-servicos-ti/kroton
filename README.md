@@ -25,14 +25,15 @@ Prazo para entrega do teste: 48 horas
 
 =======================================================================
 
-Instruções para acesso à VM:
-HOSTNAME: ec2-54-209-78-186.compute-1.amazonaws.com
-IPADDR: 54.209.78.186
-OS: AMAZON LINUX
-NGINX_SRV: ec2-54-209-78-186.compute-1.amazonaws.com:80
-S3_BUCKET: s3://alm2nginxlogs/WSNginxLogs/ [Acesso Público]
-OBJ GERADO NO BUCKET: https://alm2nginxlogs.s3.amazonaws.com/WSNginxLogs/i-02645525bf10dc7db/ngxlog_2021-08-04.tar.gz
-ssh-user: ec2-user [Se precisar acessar o console, favor solicitar o arquivo PEM]
+# Instruções para acesso à VM:
+
+* HOSTNAME: ec2-54-209-78-186.compute-1.amazonaws.com
+* IPADDR: 54.209.78.186
+* OS: AMAZON LINUX
+* NGINX_SRV: ec2-54-209-78-186.compute-1.amazonaws.com:80
+* S3_BUCKET: s3://alm2nginxlogs/WSNginxLogs/ [Acesso Público]
+* OBJ GERADO NO BUCKET: https://alm2nginxlogs.s3.amazonaws.com/WSNginxLogs/i-02645525bf10dc7db/ngxlog_2021-08-04.tar.gz
+* ssh-user: ec2-user [Se precisar acessar o console, favor solicitar o arquivo PEM]
 
 
 =======================================================================
