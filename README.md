@@ -15,14 +15,14 @@ GitHub onde exista um readme com as instruções para replicar este ambiente.
  
 Prazo para entrega do teste: 48 horas
 
-============================================================================================
+=======================================================================
 # PRÉ-REQUISITOS:
 
 * Conta em algum provedor de cloud (eg: AWS)
 * Uma VM com acesso às portas 22 e 80
 * Nginx
 * AWS Cli para configurar as credenciais [.aws/config]
-============================================================================================
+=======================================================================
 
 Instruções para acesso à VM:
 HOSTNAME: ec2-54-209-78-186.compute-1.amazonaws.com
@@ -34,10 +34,9 @@ OBJ GERADO NO BUCKET: https://alm2nginxlogs.s3.amazonaws.com/WSNginxLogs/i-02645
 ssh-user: ec2-user [Se precisar acessar o console, favor solicitar o arquivo PEM]
 
 
-============================================================================================
+=======================================================================
 
-
-1- INSTALAR NGINX [REDHAT BADED]
+1- INSTALAR NGINX [REDHAT BASED]
 $ sudo yum install nginx
 $ sudo systemctl start nginx
 $ curl ec2-54-209-78-186.compute-1.amazonaws.com [Teste de acesso à url na porta 80]
