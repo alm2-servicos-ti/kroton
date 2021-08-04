@@ -45,7 +45,7 @@ $ wget http://s3.amazonaws.com/ec2metadata/ec2-metadata => para coletar a id da 
 
 * Criar e executar o seguinte script para coletar os logs e enviá-los ao S3
 
-#-----------------------------------
+
 #!/bin/bash
 logdate=`date +'%Y-%m-%d'`
 source=/var/log/nginx
@@ -62,6 +62,6 @@ do
       rm -f $file
    fi
 done
-#-----------------------------------
+
 
 * Como opção, podemos adicionar o mesmo ao cron para agendamento de execução
