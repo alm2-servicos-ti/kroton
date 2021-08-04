@@ -22,6 +22,7 @@ Prazo para entrega do teste: 48 horas
 * Uma VM com acesso às portas 22 e 80
 * Nginx
 * AWS Cli para configurar as credenciais [.aws/config]
+
 =======================================================================
 
 Instruções para acesso à VM:
